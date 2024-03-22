@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+button,
+label,
+hr {
+	border: 0;
+	outline: 0;
+	background: 0;
+	cursor: pointer;
+}
+
+input,
+select {
+	border: 0;
+	outline: 0;
+	background: 0;
+}
+
+a,
+li,
+ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
