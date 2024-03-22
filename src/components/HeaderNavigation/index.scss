@@ -13,6 +13,7 @@
 	visibility: hidden;
 	opacity: 0;
 	z-index: 70;
+
 	&.activeMenu {
 		min-height: 20vh;
 		opacity: 1;
