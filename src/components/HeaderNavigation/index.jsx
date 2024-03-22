@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './index.scss'
 import { menuItems } from './constant'
 import Menu from './ui/Menu'
-import useActions from './../../hooks/useActions'
-import { useSelector } from 'react-redux'
+import useActions from '../../hooks/useActions'
 import { Link } from 'react-router-dom'
 
 export default function HeaderNavigation() {
-	const { isMenu } = useSelector(s => s.menu)
 	const { setIsMenu } = useActions()
 
 	const [isHoveringNav, setIsHoveringNav] = useState(false)
 
 	useEffect(() => {
-		let timer: number
+		let timer
 		if (!isHoveringNav) {
 			timer = setTimeout(() => {
 				setIsMenu(null)
