@@ -1,4 +1,10 @@
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 90;
+	background-color: white;
 	&--top {
 		display: flex;
 		align-items: center;
@@ -38,7 +44,7 @@
 }
 
 .apple-logo {
-	margin-right: 55px;
+	margin-right: 35px;
 	svg {
 		transition: all 0.2s;
 	}

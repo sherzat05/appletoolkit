@@ -113,3 +113,24 @@
 .navigate {
 	width: 100%;
 }
+
+.background {
+	position: absolute;
+	z-index: -10;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100dvh;
+	background: #00000080;
+	transition: all 0.7s ease;
+
+	transition: all 0.7s ease;
+	pointer-events: none;
+	visibility: hidden;
+	opacity: 0;
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+}

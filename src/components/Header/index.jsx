@@ -4,7 +4,7 @@ import HeaderNavigation from '../HeaderNavigation'
 function Header() {
 	return (
 		<header className='header'>
-			<div className='container'>
+			<div className='container relative z-[50]'>
 				<div className='header--top'>
 					<h4 className='text-black'>
 						Products, services, and OS functions may not be available in this

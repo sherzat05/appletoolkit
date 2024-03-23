@@ -3,9 +3,11 @@ import HomePage from '../pages/Home/page'
 
 const MainRoutes = () => {
 	return (
-		<Routes>
-			<Route path='/' element={<HomePage />} />
-		</Routes>
+		<main className='main'>
+			<Routes>
+				<Route path='/' element={<HomePage />} />
+			</Routes>
+		</main>
 	)
 }
 
